@@ -24,11 +24,10 @@ carousel.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - carousel.offsetLeft;
-    const walk = (x - startX) * 1.5; // Скорость прокрутки
+    const walk = (x - startX) * 1.5;
     carousel.scrollLeft = scrollLeft - walk;
 });
 
-// Поддержка тачпадов и мобильных устройств
 carousel.addEventListener('touchstart', (e) => {
     isDown = true;
     startX = e.touches[0].pageX - carousel.offsetLeft;
@@ -45,7 +44,7 @@ carousel.addEventListener('touchmove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.touches[0].pageX - carousel.offsetLeft;
-    const walk = (x - startX) * 1.5; // Скорость прокрутки
+    const walk = (x - startX) * 1.5;
     carousel.scrollLeft = scrollLeft - walk;
 });
 
@@ -75,3 +74,13 @@ backButton.addEventListener('click', () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerMenu = document.getElementById('burger-menu');
+    const menu = document.getElementById('menu');
+    const button = document.querySelector('.button--uniq');
+  
+    burgerMenu.addEventListener('click', function() {
+      menu.classList.toggle('menu--active');
+      button.classList.toggle('menu--active');
+    });
+  });
