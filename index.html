@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет-магазин NFT</title>
     <link rel="stylesheet" href="style/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
   <script src="js/index.js" defer></script>
@@ -13,13 +12,16 @@
         <div class="container">
             <div class="wrapper">
               <div class="logo"><img src="img/logo.png" alt="Логотип"></div>
-              <div class="burger"><img src="img/dashicons_menu.png" alt="Бургерное меню"></div>
-                <ul class="menu">
-                    <li><a href="#explore" class="menu__link">Explore</a></li>
-                    <li><a href="#creators" class="menu__link">Creators</a></li>
-                    <li><a href="#community" class="menu__link">Community</a></li>
-                </ul>
-                <button class="button button--uniq"> Connect Wallet</button>
+              <div class="burger" id="burger-menu">
+                <img src="img/dashicons_menu.png" alt="Бургерное меню">
+              </div>
+              <ul class="menu" id="menu">
+                <li><a href="#explore" class="menu__link">Explore</a></li>
+                <li><a href="#creators" class="menu__link">Creators</a></li>
+                <li><a href="#community" class="menu__link">Community</a></li>
+              </ul>
+              <button class="button button--uniq">Connect Wallet</button>
+              
             </div>
         </div>
     </header>
@@ -28,27 +30,25 @@
             <div class="container">
                 <div class="flex">
                   <div class="content">
-                      <h1 class="slogan">Explore, Buy and Sell the <span class="different">Best NFTs!</span></h1>
-                        <button class="button button--max">Explore</button>
-                        <button class="button button--max">Create</button>
-                      </div>
+                    <h1 class="slogan">Explore, Buy and Sell the <span class="different">Best NFTs!</span></h1>
+                    <button class="button button--max ">Explore</button>
+                    <button class="button button--max">Create</button>
+                  </div>
                     <div class="artist">
                       <img src="img/artist.png" alt="NFT">
-                      <div class="artists--bid-container">
-                      </div>
-                      <div class="artist--start">
-                        <div class="start--bid">
+                      <div class="artist__start">
+                        <div class="start-bid">
                         <div class="sbid">Artist</div>
                         <div class="ssbid">@wzard</div>
                       </div>
                         <button class="button button--start">Start Bid</button>
                       </div>
-                      <div class="artist--bid">
-                        <div class="text--bid">
+                      <div class="artist__bid">
+                      <div class="text-bid">
                         <div class="tbid">Current Bid</div>
                         <div class="ttbid">0.99 ETH</div>
                       </div>
-                      <div class="text--bid">
+                      <div class="text-bid">
                         <div class="tbid">Ends in</div>
                         <div class="ttbid">25 hrs</div>
                       </div>
@@ -60,7 +60,7 @@
                 <div>20k+<br> Auctions</div>
                 <div>12k+<br> Creators</div>
               </div>
-              <div class="clientlogo"><img src="img/Clients logo.png" alt="Логотипы"></div>
+              <div class="clientlogo"><img src="img/Clients_logo.png" alt="Логотипы"></div>
         </div>
           </section>
 
@@ -78,7 +78,7 @@
 
                       <div class="bid">
                         <div class="auction-image">
-                          <img src="img/image 9.png" alt="Virtual Art">
+                          <img src="img/image_9.png" alt="Virtual Art">
                           <div class="timer">03:18:24</div>
                         </div>
                         <div class="auction-info">
@@ -89,7 +89,7 @@
                               <div class="by">by @wzard</div>
                             </div>
                             <div class="likes">
-                              <div class="heart"><img src="img/like.png"></div>
+                              <div class="heart"><img src="img/like.png" alt="Лайк"></div>
                               <div class="like">92</div>
                             </div>
                           </div>
@@ -113,7 +113,7 @@
                               <div class="by">by @wzard</div>
                             </div>
                             <div class="likes">
-                              <div class="heart"><img src="img/like.png"></div>
+                              <div class="heart"><img src="img/like.png" alt="Лайк"></div>
                               <div class="like">92</div>
                             </div>
                           </div>
@@ -137,7 +137,7 @@
                               <div class="by">by @wzard</div>
                             </div>
                             <div class="likes">
-                              <div class="heart"><img src="img/like.png"></div>
+                              <div class="heart"><img src="img/like.png" alt="Лайк"></div>
                               <div class="like">92</div>
                             </div>
                           </div>
@@ -150,7 +150,7 @@
                       </div>
                       <div class="bid">
                         <div class="auction-image">
-                          <img src="img/image 9.png" alt="Virtual Art">
+                          <img src="img/image_9.png" alt="Virtual Art">
                           <div class="timer">03:18:24</div>
                         </div>
                         <div class="auction-info">
@@ -161,7 +161,7 @@
                               <div class="by">by @wzard</div>
                             </div>
                             <div class="likes">
-                              <div class="heart"><img src="img/like.png"></div>
+                              <div class="heart"><img src="img/like.png" alt="Лайк"></div>
                               <div class="like">92</div>
                             </div>
                           </div>
@@ -185,7 +185,7 @@
                               <div class="by">by @wzard</div>
                             </div>
                             <div class="likes">
-                              <div class="heart"><img src="img/like.png"></div>
+                              <div class="heart"><img src="img/like.png" alt="Лайк"></div>
                               <div class="like">92</div>
                             </div>
                           </div>
@@ -215,7 +215,7 @@
                     <div class="sqrt"><img src="img/bi_collection.png" alt="collection"></div>
                     <img class="line" src="img/line.png" alt="line">
                     <div class="sqrt"><img src="img/fluent_collections-24-regular.png" alt="fluent"></div>
-                    <img class="line" src="img/Vector 3.png" alt="line">
+                    <img class="line" src="img/linesmall.png" alt="line">
                     <div class="sqrt"><img src="img/icon-park-outline_sales-report.png" alt="outline"></div>
                   </div>
                   <div class="text text--third">
@@ -241,10 +241,10 @@
                           <img src="img/Image(4).png" alt="Virtual Art">
                         </div>
                         <div class="auction-info">
-                          <div class="creator--col">
+                          <div class="creator-col">
                               <div class="avatar avatar--col"> <img src="img/avatar2.png" alt="Creator"> </div>
-                              <h3 class="designation--col">@wzard</h3>
-                              <div class="current--col">ERC-721</div>
+                              <h3 class="designation-col">@wzard</h3>
+                              <div class="current current--col">ERC-721</div>
                           </div>
                         </div>
                       </div>
@@ -253,10 +253,10 @@
                           <img src="img/col2.png" alt="Virtual Art">
                         </div>
                         <div class="auction-info">
-                          <div class="creator--col">
+                          <div class="creator-col">
                               <div class="avatar avatar--col"> <img src="img/avatar2.png" alt="Creator"> </div>
-                              <h3 class="designation--col">@wzard</h3>
-                              <div class="current--col">ERC-721</div>
+                              <h3 class="designation-col">@wzard</h3>
+                              <div class="current current--col">ERC-721</div>
                           </div>
                         </div>
                       </div>
@@ -265,10 +265,10 @@
                           <img src="img/Image(4).png" alt="Virtual Art">
                         </div>
                         <div class="auction-info">
-                          <div class="creator--col">
+                          <div class="creator-col">
                               <div class="avatar avatar--col"> <img src="img/avatar2.png" alt="Creator"> </div>
-                              <h3 class="designation--col">@wzard</h3>
-                              <div class="current--col">ERC-721</div>
+                              <h3 class="designation-col">@wzard</h3>
+                              <div class="current current--col">ERC-721</div>
                           </div>
                         </div>
                       </div>
@@ -277,10 +277,10 @@
                           <img src="img/col2.png" alt="Virtual Art">
                         </div>
                         <div class="auction-info">
-                          <div class="creator--col">
+                          <div class="creator-col">
                               <div class="avatar avatar--col"> <img src="img/avatar2.png" alt="Creator"> </div>
-                              <h3 class="designation--col">@wzard</h3>
-                              <div class="current--col">ERC-721</div>
+                              <h3 class="designation-col">@wzard</h3>
+                              <div class="current current--col">ERC-721</div>
                           </div>
                         </div>
                       </div>
@@ -289,10 +289,10 @@
                           <img src="img/Image(4).png" alt="Virtual Art">
                         </div>
                         <div class="auction-info">
-                          <div class="creator--col">
+                          <div class="creator-col">
                               <div class="avatar avatar--col"> <img src="img/avatar2.png" alt="Creator"> </div>
-                              <h3 class="designation--col">@wzard</h3>
-                              <div class="current--col">ERC-721</div>
+                              <h3 class="designation-col">@wzard</h3>
+                              <div class="current current--col">ERC-721</div>
                           </div>
                         </div>
                       </div>
@@ -300,8 +300,6 @@
                     </div>
                     <button class="button button--view">View All</button>
                   </div>
-              </div>
-                </div>
               </div>
             </div>
           </section>
@@ -312,26 +310,26 @@
                 <div class="flex flex--cat">
                   <h2 class="title title--purple title--purple--unique">Explore By Categories</h2>
                   <div class="carousel">
-                    <div class="carousel-items">
+                    <div class="carousel-items carousel-items--cat">
                       <div class="bid bid--cat">
                         <div class="auction-image">
                           <img src="img/cat1.png" alt="Virtual Art">
                         </div>
                         <div class="auction-info">
-                          <div class="creator--cat">
+                          <div class="creator-cat">
                             <div class="avatar avatar--cat"> <img src="img/avatar3.png" alt="Creator"> </div>
-                            <div class="artist--cat">
-                              <h3 class="designation--cat">Virtual Art</h3>
-                              <div class="by--cat">by @wzard</div>
+                            <div class="artist artist--cat">
+                              <h3 class="designation designation--cat">Virtual Art</h3>
+                              <div class="by by--cat">by @wzard</div>
                             </div>
                             <div class="likes">
-                              <div class="heart--cat"><img src="img/like.png"></div>
-                              <div class="like--cat">92</div>
+                              <div class="heart heart--cat"><img src="img/like.png" alt="Лайк"></div>
+                              <div class="like like--cat">92</div>
                             </div>
                           </div>
                           <div class="bd-info">
-                            <div class="current--cat">Current Bid</div>
-                            <div class="price--cat">4.89 ETH</div>
+                            <div class="current current--cat">Current Bid</div>
+                            <div class="price price--cat">4.89 ETH</div>
                           </div>
                         </div>
                         <button class="button button--hover">Place a bid</button>
@@ -341,20 +339,20 @@
                           <img src="img/cat2.png" alt="Virtual Art">
                         </div>
                         <div class="auction-info">
-                          <div class="creator--cat">
+                          <div class="creator-cat">
                             <div class="avatar avatar--cat"> <img src="img/avatar3.png" alt="Creator"> </div>
-                            <div class="artist--cat">
-                              <h3 class="designation--cat">Virtual Art</h3>
-                              <div class="by--cat">by @wzard</div>
+                            <div class="artist artist--cat">
+                              <h3 class="designation designation--cat">Virtual Art</h3>
+                              <div class="by by--cat">by @wzard</div>
                             </div>
                             <div class="likes">
-                              <div class="heart--cat"><img src="img/like.png"></div>
-                              <div class="like--cat">92</div>
+                              <div class="heart heart--cat"><img src="img/like.png" alt="Лайк"></div>
+                              <div class="like like--cat">92</div>
                             </div>
                           </div>
                           <div class="bd-info">
-                            <div class="current--cat">Current Bid</div>
-                            <div class="price--cat">4.89 ETH</div>
+                            <div class="current current--cat">Current Bid</div>
+                            <div class="price price--cat">4.89 ETH</div>
                           </div>
                         </div>
                         <button class="button button--hover">Place a bid</button>
@@ -364,20 +362,20 @@
                           <img src="img/cat3.png" alt="Virtual Art">
                         </div>
                         <div class="auction-info">
-                          <div class="creator--cat">
+                          <div class="creator-cat">
                             <div class="avatar avatar--cat"> <img src="img/avatar3.png" alt="Creator"> </div>
-                            <div class="artist--cat">
-                              <h3 class="designation--cat">Virtual Art</h3>
-                              <div class="by--cat">by @wzard</div>
+                            <div class="artist artist--cat">
+                              <h3 class="designation designation--cat">Virtual Art</h3>
+                              <div class="by by--cat">by @wzard</div>
                             </div>
                             <div class="likes">
-                              <div class="heart--cat"><img src="img/like.png"></div>
-                              <div class="like--cat">92</div>
+                              <div class="heart heart--cat"><img src="img/like.png" alt="Лайк"></div>
+                              <div class="like like--cat">92</div>
                             </div>
                           </div>
                           <div class="bd-info">
-                            <div class="current--cat">Current Bid</div>
-                            <div class="price--cat">4.89 ETH</div>
+                            <div class="current current--cat">Current Bid</div>
+                            <div class="price price--cat">4.89 ETH</div>
                           </div>
                         </div>
                         <button class="button button--hover">Place a bid</button>
@@ -387,20 +385,20 @@
                           <img src="img/cat2.png" alt="Virtual Art">
                         </div>
                         <div class="auction-info">
-                          <div class="creator--cat">
+                          <div class="creator-cat">
                             <div class="avatar avatar--cat"> <img src="img/avatar3.png" alt="Creator"> </div>
-                            <div class="artist--cat">
-                              <h3 class="designation--cat">Virtual Art</h3>
-                              <div class="by--cat">by @wzard</div>
+                            <div class="artist artist--cat">
+                              <h3 class="designation designation--cat">Virtual Art</h3>
+                              <div class="by by--cat">by @wzard</div>
                             </div>
                             <div class="likes">
-                              <div class="heart--cat"><img src="img/like.png"></div>
-                              <div class="like--cat">92</div>
+                              <div class="heart heart--cat"><img src="img/like.png" alt="Лайк"></div>
+                              <div class="like like--cat">92</div>
                             </div>
                           </div>
                           <div class="bd-info">
-                            <div class="current--cat">Current Bid</div>
-                            <div class="price--cat">4.89 ETH</div>
+                            <div class="current current--cat">Current Bid</div>
+                            <div class="price price--cat">4.89 ETH</div>
                           </div>
                         </div>
                         <button class="button button--hover">Place a bid</button>
@@ -466,7 +464,6 @@
                 </div>
                 <button class="button button--view">View All</button>
                 </div>
-                </div>
               </div>
             </div>
           </section>
@@ -499,8 +496,8 @@
                 <div class="social__logo"><a href="error.html"><img src="img/google.png" alt="Google"></a></div>
               </div>
             </div>
-                <div class="link--first">
-                    <h6 class="partition">About Us</h6>
+                <div class="link link--first">
+                    <h3 class="partition">About Us</h3>
                     <ul class="list">
                         <li><a href="error.html" class="list__link">About NFTs</a></li>
                         <li><a href="error.html" class="list__link">Live Auctions</a></li>
@@ -508,8 +505,8 @@
                         <li><a href="error.html" class="list__link">Activity</a></li>
                     </ul>
                 </div>
-                <div class="link--second">
-                    <h6 class="partition">Support</h6>
+                <div class="link">
+                    <h3 class="partition">Support</h3>
                     <ul class="list">
                         <li><a href="error.html" class="list__link">Help & Support</a></li>
                         <li><a href="error.html" class="list__link">Item Details</a></li>
@@ -518,7 +515,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="description__reserved">All rights reserved@2021</div>
+            <div class="links__description">All rights reserved@2021</div>
               </div>
             </div>
         </footer>
