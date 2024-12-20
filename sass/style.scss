@@ -1,11 +1,10 @@
 @import"_style.scss";
 @font-face {
-  font-family: 'Work Sans';
+  font-family: $font-sans;
   src: url(../fonts/WorkSans-VariableFont_wght.ttf);
 }
-
 @font-face {
-  font-family: 'Oxanium';
+  font-family: $font-ox;
   src: url(../fonts/Oxanium-VariableFont_wght.ttf);
 }
 
@@ -41,7 +40,7 @@ body {
   background-color: rgba(233, 215, 167, 0.1);
   border: 1px solid $col-ell;
   padding: 21px 29px;
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 18px;
   font-weight: bold;
   margin-right: 76px;
@@ -64,7 +63,7 @@ body {
 .menu {
   display: flex;
   list-style-type: none;
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 18px;
   letter-spacing: 2%;
 }
@@ -72,7 +71,7 @@ body {
 .menu__link {
   text-decoration: none;
   padding-right: 64px;
-  color: #F5FBF2;
+  color: $col-base;
 
   &:hover {
     text-decoration: underline;
@@ -100,14 +99,14 @@ body {
 }
 
 .button--max {
-  padding: 23px 81px 23px 72px;
+  padding: 23px 88px 23px 76px;
   color: white;
   background-color: rgba(233, 215, 167, 0.1);
   border: 1px solid $col-ell;
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 28px;
   font-weight: bold;
-  margin-right: 43px;
+  margin-right: 29px;
   line-height: 36px;
 
   &:hover {
@@ -136,7 +135,7 @@ body {
   background-color: #3D2942;
 }
 
-.artist--bid {
+.artist__bid {
   position: absolute;
   display: flex;
   background: linear-gradient(90deg, rgba(255, 137, 61, 0.09) 0%, rgba(250, 250, 250, 0.9) 100%);
@@ -147,12 +146,12 @@ body {
   margin-left: 22px;
 }
 
-.text--bid:nth-child(1) {
+.text-bid:nth-child(1) {
   margin-right: 188px;
 }
 
 .tbid {
-  font-family: Oxanium;
+  font-family: $font-ox;
   font-size: 18px;
   letter-spacing: 8%;
   color: #E4DEE7;
@@ -160,13 +159,13 @@ body {
 }
 
 .ttbid {
-  font-family: Oxanium;
+  font-family: $font-ox;
   font-size: 32px;
   color: white;
   font-weight: bold;
 }
 
-.artist--start {
+.artist__start {
   position: absolute;
   display: flex;
   background: white;
@@ -175,7 +174,7 @@ body {
 }
 
 .sbid {
-  font-family: Oxanium;
+  font-family: $font-ox;
   font-size: 28px;
   letter-spacing: 7%;
   color: #16091B;
@@ -185,7 +184,7 @@ body {
 }
 
 .ssbid {
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 24px;
   color: #594D5E;
   background: white;
@@ -194,14 +193,14 @@ body {
 .button--start {
   padding: 21px 53px 18px 43px;
   background-color: $col-ell;
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-weight: bold;
   font-size: 24px;
   display: block;
   color: black;
 }
 
-.start--bid {
+.start-bid {
   padding-left: 20px;
   background: white;
 
@@ -211,13 +210,13 @@ body {
 }
 
 .slogan {
-  font-family: Oxanium;
+  font-family: $font-ox;
   font-size: 85px;
   font-weight: 700;
   line-height: 130px;
   text-align: left;
   width: 710px;
-  color: #F5FBF2;
+  color: $col-base;
   padding-bottom: 77px;
 
   .different {
@@ -228,17 +227,17 @@ body {
 .text--first {
   display: flex;
   margin-bottom: 200px;
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 24px;
   color: #9B9E9A;
   text-align: center;
   gap: 109px;
 
   div::first-line {
-    font-family: Oxanium;
+    font-family: $font-ox;
     font-weight: bold;
     font-size: 62px;
-    color: #F5FBF2;
+    color: $col-base;
   }
 }
 
@@ -251,11 +250,11 @@ body {
 .works {
   display: flex;
   justify-content: center;
-  padding: 189px 0px;
+  padding: 197px 0px;
 }
 
 h2.title--works {
-  padding-left: 460px;
+  padding-left: 457px;
   position: relative;
   margin-bottom: 79px;
 }
@@ -285,9 +284,9 @@ h2.title--works {
 }
 
 .title {
-  font-family: Oxanium;
+  font-family: $font-ox;
   font-size: 64px;
-  color: #F5FBF2;
+  color: $col-base;
   padding-left: 538px;
   position: absolute;
   z-index: 2;
@@ -311,7 +310,7 @@ h2.title--works {
 }
 
 .container--popular {
-  padding: 10px 0px;
+  padding: 3px 0px;
 }
 
 .title--purple::before {
@@ -333,10 +332,8 @@ h2.title--works {
     background-color: #8613A5;
     border-radius: 50%;
     z-index: -1;
-    left: 364px;
+    right: 583px;
     bottom: -19%;
-    width: 110px;
-    height: 110px;
   }
 
   padding-left: 387px;
@@ -349,7 +346,7 @@ h2.title--works {
 
 .text--third {
   display: flex;
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 24px;
   color: $col-ell;
   gap: 154px;
@@ -358,7 +355,7 @@ h2.title--works {
 
 .steps {
   display: flex;
-  margin-bottom: 57px;
+  margin-bottom: 55px;
   align-items: center;
   justify-content: space-between;
   padding-left: 89px;
@@ -374,9 +371,9 @@ h2.title--works {
 
 .button--view {
   padding: 24px 63px;
-  color: #F5FBF2;
+  color: $col-base;
   border: 1px solid $col-ell;
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 30px;
   margin: 0 auto;
   justify-content: center;
@@ -419,15 +416,15 @@ h2.title--works {
 }
 
 .info__name, .count__number {
-  font-family: Oxanium;
+  font-family: $font-ox;
   font-size: 32px;
   font-weight: bold;
-  color: #F5FBF2;
+  color: $col-base;
   background: #302034;
 }
 
 .info__eth, .count__items {
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 24px;
   color: #BDAAC1;
   background: #302034;
@@ -459,7 +456,7 @@ h2.title--works {
 }
 
 .creators {
-  padding-top: 110px;
+  padding-top: 159px;
   padding-bottom: 83px;
 }
 
@@ -497,7 +494,7 @@ h2.title--works {
     padding: 32px 53px;
     border: 1px solid #E7B226;
     color: #A48EA9;
-    font-family: Work Sans;
+    font-family: $font-sans;
     font-size: 24px;
     background: none;
   }
@@ -509,7 +506,7 @@ h2.title--works {
     background-color: #E7B226;
     color: #251928;
     cursor: pointer;
-    font-family: Work Sans;
+    font-family: $font-sans;
     font-size: 24px;
     font-weight: bold;
   }
@@ -567,15 +564,15 @@ footer {
 
 .partition {
   margin-bottom: 21px;
-  color: #F5FBF2;
-  font-family: Work Sans;
+  color: $col-base;
+  font-family: $font-sans;
   font-size: 24px;
   font-weight: bold;
 }
 
 .list {
   list-style: none;
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 20px;
   font-weight: medium;
 }
@@ -587,7 +584,7 @@ footer {
 }
 
 .description__text {
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 20px;
   font-weight: medium;
   color: #96839B;
@@ -596,8 +593,8 @@ footer {
   padding-top: 6px;
 }
 
-.description__reserved {
-  font-family: Work Sans;
+.links__description {
+  font-family: $font-sans;
   font-size: 20px;
   color: #96839B;
   line-height: 36px;
@@ -606,10 +603,7 @@ footer {
 
 .part {
   display: flex;
-}
-
-.artist--bid--container {
-  position: relative;
+  margin-bottom: -3px;
 }
 
 .auctions {
@@ -629,8 +623,8 @@ footer {
   display: flex;
   gap: 45px;
   overflow-x: hidden;
-  padding-bottom: 84px;
-  padding-top: 190px;
+  padding-bottom: 80px;
+  padding-top: 133px;
 }
 
 .bid {
@@ -641,6 +635,7 @@ footer {
 .carousel-items--popular {
   padding-top: 200px;
   gap: 35px;
+  margin-bottom: 3px;
 }
 
 .auction-image {
@@ -655,8 +650,8 @@ footer {
 
 .timer {
   position: absolute;
-  font-family: Work Sans;
-  color: #F5FBF2;
+  font-family: $font-sans;
+  color: $col-base;
   line-height: 35.5px;
   letter-spacing: 2%;
   font-weight: bold;
@@ -693,15 +688,15 @@ footer {
 }
 
 .by {
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 20px;
   color: #BDAAC1;
   background-color: #3D2942;
 }
 
 .designation {
-  color: #F5FBF2;
-  font-family: Work Sans;
+  color: $col-base;
+  font-family: $font-sans;
   font-size: 28px;
   background-color: #3D2942;
   margin-bottom: 8px;
@@ -716,22 +711,22 @@ footer {
 }
 
 .price {
-  font-family: Oxanium;
+  font-family: $font-ox;
   font-size: 24px;
   font-weight: bold;
-  color: #F5FBF2;
+  color: $col-base;
   background-color: #3D2942;
 }
 
 .current {
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 24px;
   color: #C6BfC8;
   background-color: #3D2942;
 }
 
 .like {
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 32px;
   color: #76607A;
   background-color: #3D2942;
@@ -757,7 +752,7 @@ footer {
   padding: 21px;
   border: 1px solid #FDE8B3;
   color: white;
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 24px;
   letter-spacing: 5%;
   line-height: 35.5px;
@@ -766,6 +761,7 @@ footer {
 
 .bid--col {
   padding: 37px 37px 32px;
+  cursor: grab;
 }
 
 .arrows {
@@ -775,7 +771,7 @@ footer {
 .back {
   border: none;
   top: 94px;
-  left: 927px;
+  left: 956px;
   z-index: 1;
   background-color: $col-bg;
   cursor: pointer;
@@ -784,14 +780,14 @@ footer {
 .next {
   border: none;
   top: 94px;
-  left: 255px;
+  left: 281px;
   z-index: 1;
   background-color: $col-bg;
   cursor: pointer;
 }
 
 .categories {
-  padding: 93px 0px;
+  padding: 103px 0px;
   background-color: #251928;
 }
 
@@ -799,7 +795,7 @@ footer {
   display: block;
 }
 
-.creator--cat {
+.creator-cat {
   display: flex;
   align-items: center;
   background-color: #3D2942;
@@ -820,15 +816,15 @@ footer {
 }
 
 .by--cat {
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 18px;
   color: #BDAAC1;
   background-color: #3D2942;
 }
 
 .designation--cat {
-  color: #F5FBF2;
-  font-family: Work Sans;
+  color: $col-base;
+  font-family: $font-sans;
   font-size: 24px;
   background-color: #3D2942;
   margin-bottom: 6px;
@@ -846,19 +842,19 @@ footer {
   font-family: Oxanium;
   font-size: 20px;
   font-weight: bold;
-  color: #F5FBF2;
+  color: $col-base;
   background-color: #3D2942;
 }
 
 .current--cat {
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 20px;
   color: #C6BfC8;
   background-color: #3D2942;
 }
 
 .like--cat {
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 24px;
   color: #76607A;
   background-color: #3D2942;
@@ -894,7 +890,7 @@ footer {
   padding-bottom: 104px;
 }
 
-.creator--col {
+.creator-col {
   display: flex;
   align-items: center;
   background-color: #3D2942;
@@ -913,9 +909,9 @@ footer {
   background-color: #3D2942;
 }
 
-.designation--col {
-  color: #F5FBF2;
-  font-family: Work Sans;
+.designation-col {
+  color: $col-base;
+  font-family: $font-sans;
   font-size: 32px;
   background-color: #3D2942;
   margin-right: 166px;
@@ -924,7 +920,7 @@ footer {
 }
 
 .current--col {
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 20px;
   font-weight: bold;
   color: #C2B5C6;
@@ -935,7 +931,7 @@ footer {
 .button--hover {
   display: none;
   padding: 21px 58px;
-  font-family: Work Sans;
+  font-family: $font-sans;
   font-size: 24px;
   font-weight: 600;
   background-color: $col-ell;
@@ -954,10 +950,6 @@ footer {
     opacity: 0.3;
     transition: opacity 0.3s ease;
   }
-}
-
-.carousel--cat {
-  cursor: grab;
 }
 
 .flex--creators {
@@ -1001,24 +993,374 @@ footer {
   .clientlogo img {
     max-width: 90%;
   }
+
+  .carousel {
+    max-width: 1145px;
+  }
+
+  .back {
+    left: 68%;
+  }
+
+  .title, h2.title--works {
+    display: flex;
+    align-self: center;
+    padding-left: 0px;
+  }
+
+  .title--pink, .title--purple--unique {
+    padding-left: 20%;
+  }
+
+  .text--third {
+    text-align: center;
+    gap: 4vh;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    margin-right: 0px;
+  }
+
+  .title {
+    &.title--creators {
+      padding-left: 32%;
+    }
+
+    align-self: auto;
+    padding-left: 17%;
+  }
+
+  .description {
+    margin: 0;
+  }
+
+  .logo--uniq {
+    margin-right: 4%;
+  }
+
+  .links__description {
+    padding-left: 0%;
+  }
 }
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+  .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-@media screen and (max-width: 992px) {}
-
-@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 576px) {
   .container {
-    max-width: 500px;
+    max-width: 900px;
+  }
+
+  .logo {
+    margin-right: 10%;
+  }
+
+  .slogan {
+    text-align: center;
+  }
+
+  .content {
+    display: contents;
+    margin-bottom: 5%;
+  }
+
+  .artist {
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+
+  .button--max {
+    margin-bottom: 5%;
+    margin-right: 0;
+
+    &:nth-of-type(1) {
+      margin-right: 2%;
+    }
+  }
+
+  .artist__bid {
+    top: 56%;
+  }
+
+  .artist__start {
+    top: 90%;
+  }
+
+  .text--first {
+    justify-content: center;
+  }
+
+  .clientlogo {
+    display: none;
+  }
+
+  .carousel {
+    max-width: 900px;
+  }
+
+  .next {
+    left: 22%;
+  }
+
+  .back {
+    left: 63%;
+  }
+
+  .flex--auctions {
+    display: block;
+  }
+
+  .title {
+    padding-left: 17vh;
+
+    &.title--creators {
+      padding-left: 17vh;
+    }
+  }
+
+  .text--third {
+    text-align: center;
+    gap: 10%;
+  }
+
+  .steps {
+    padding: 0 5%;
+  }
+
+  .title--pink {
+    padding-left: 12vh;
+  }
+
+  .title--purple--unique {
+    padding-left: 10vh;
+  }
+
+  .carousel-items--cat {
+    flex-wrap: wrap;
+  }
+
+  .button--hover {
+    margin-top: -38%;
+    top: auto;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    margin-right: 0px;
+  }
+
+  .title--read {
+    padding-left: 2vh;
+  }
+
+  .part {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .link--first {
+    margin-right: 50%;
+  }
+
+  .description {
+    margin-bottom: 7%;
+    width: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo--uniq {
+    align-content: center;
+  }
+
+  .links__description {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .carousel {
+    max-width: 695px;
+  }
+
+  .title {
+    padding-left: 11vh;
+
+    &.title--creators {
+      padding-left: 11vh;
+    }
+  }
+
+  .back {
+    left: 60%;
+  }
+
+  .title--pink::before {
+    bottom: 42%;
+  }
+
+  .title--purple--unique::before {
+    right: 522px;
+    bottom: 45%;
+  }
+
+  .carousel-items {
+    padding-top: 220px;
+    justify-content: center;
+  }
+
+  .button--hover {
+    margin-top: -50%;
+  }
+
+  .title--creators::before {
+    bottom: -14%;
+  }
+
+  .title.title--read {
+    font-size: 54px;
+    padding-left: 2vh;
+  }
+
+  .container--footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    padding: 115px;
+  }
+
+  .logo--uniq, .link {
+    margin-right: 0;
+  }
+
+  .link--first {
+    margin-right: 10%;
+  }
+
+  .part {
+    justify-content: center;
+    margin-bottom: 15%;
+  }
+
+  .text--third {
+    font-size: 15px;
+  }
+
+  .sqrt::before {
+    width: 95px;
+    height: 95px;
+  }
+
+  img.line {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .artist__bid {
+    top: 54%;
+  }
+
+  .artist__start {
+    top: 88%;
+  }
+
+  .carousel {
+    max-width: 615px;
+  }
+
+  .title--pink::before {
+    right: 457px;
+  }
+
+  .title--purple--unique::before {
+    right: 452px;
+  }
+
+  .button--hover {
+    margin-top: -58%;
+  }
+
+  .title--creators::before {
+    right: 350px;
+  }
+
+  .info__eth {
+    margin-right: 0px;
+  }
+
+  .title.title--read {
+    font-size: 48px;
+    padding-left: 0vh;
   }
 
   .burger {
     display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+
+    img {
+      width: auto;
+      height: 65px;
+    }
   }
 
-  .menu, .button--uniq {
+  .menu {
     display: none;
+    position: absolute;
+    top: 7%;
+    left: 71%;
+    width: 19%;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+
+  .menu--active.button--uniq, .button--uniq {
+    display: none;
+  }
+
+  .menu.menu--active {
+    display: block;
+    max-height: 300px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .menu__link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+      background-color: $col-ell;
+      color: #000;
+    }
   }
 }
